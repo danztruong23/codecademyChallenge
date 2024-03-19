@@ -1,0 +1,397 @@
+html {
+  font-family: "EB Garamond";
+  font-size: 16px;
+  background-color: #f3f3f3;
+}
+
+/* Header + Banner*/
+
+#ban-nav {
+  box-sizing: border-box;
+  width: 100%;
+  height: 41.5rem;
+  background: url("/resources/images/banner-03.jpg") no-repeat;
+  background-size: cover;
+}
+
+#ban-nav .nav {
+  height: 2.2rem;
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.nav .left-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid white;
+}
+
+.left-nav img {
+  height: 1rem;
+}
+
+.left-nav .burger-title {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.68rem;
+  padding: 0 0.8rem;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-nav ul li a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.68rem;
+  padding: 0 0.4rem;
+}
+
+.right-nav img {
+  height: 0.8rem;
+  padding-left: 0.4rem;
+  position: relative;
+  top: 0.1rem;
+}
+
+#ban-nav img.waxpoetics-logo {
+  margin: 2.5rem auto;
+  display: block;
+  width: 96.5%;
+}
+
+/* Article */
+
+#article {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.6rem 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+#article .left-article {
+  box-sizing: border-box;
+  width: 48%;
+}
+
+.left-article .article-title p {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.68rem;
+  color: #ffc80c;
+  position: relative;
+  bottom: 8.3rem;
+}
+
+.left-article .article-title h1 {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+  color: #ffc80c;
+  position: relative;
+  bottom: 6.7rem;
+}
+.left-article .article-info p {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.4rem;
+  line-height: 0.6rem;
+  position: relative;
+  bottom: 0.4rem;
+}
+
+#article .right-article {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.right-article .article-subtitle {
+  font-weight: 600;
+  padding-right: 11rem;
+  margin-bottom: 1.9rem;
+}
+
+.right-article .article-para {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-para p {
+  width: 48%;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+}
+
+/* Mixes & Comming Soon */
+
+#mixes-comingsoon {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.6rem 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid grey;
+}
+
+#mixes-comingsoon .mixes.container {
+  flex-grow: 1;
+  padding-right: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-right: 1px solid grey;
+}
+
+.mixes.top-panel {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mixes.top-panel .left-part {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mixes.top-panel .left-part img {
+  height: 1rem;
+  margin-right: 0.4rem;
+}
+
+.mixes.top-panel .left-part h2 {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-right: 1.5rem;
+}
+
+.mixes.top-panel .left-part .microcopy {
+  font-size: 0.68rem;
+  line-height: 0.9rem;
+  width: 60%;
+}
+
+.mixes.top-panel a.right-part {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.68rem;
+}
+
+.mixes.bottom-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 90%;
+}
+
+.mixes.bottom-panel img.gallery-arrow {
+  height: 1rem;
+  opacity: 0.5;
+  position: relative;
+  top: 6rem;
+}
+
+.mixes.bottom-panel .featured-mix.container {
+  flex: 1 1 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.featured-mix img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
+
+.featured-mix.title {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  text-align: center;
+  margin: 0.8rem 0;
+}
+
+.featured-mix button {
+  border: 0.9px solid black;
+  border-radius: 15rem;
+  padding: 0.3rem 0.7rem;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+#mixes-comingsoon .coming-soon.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1.3rem;
+  padding: 0 0.8rem 0.2rem 1.5rem;
+  min-width: 30%;
+}
+
+.coming-soon.title {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.new-stuff.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.new-stuff.title {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.new-stuff.image {
+  align-self: stretch;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  padding: 1.8rem 0.5rem;
+  width: 100%;
+}
+
+.new-stuff.image h2 {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.new-stuff.released-date p {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.68rem;
+}
+
+/* Subscribe */
+
+.subscribe.container {
+  box-sizing: border-box;
+  height: 32rem;
+  width: 100%;
+  padding: 1.5rem;
+  background: url("/resources/images/subscribe.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe.text-panel > * {
+  color: white;
+}
+
+.subscribe.title {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  width: 50%;
+}
+
+.subscribe.info {
+  font-weight: 600;
+  margin: 1rem 0 1rem 0;
+}
+
+.subscribe button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 15rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+}
+
+/* Footer */
+footer {
+  box-sizing: border-box;
+  padding: 2rem 1.5rem 1.4rem 1.5rem;
+}
+
+footer .top-container {
+  display: flex;
+}
+
+.top-container .top-left {
+  width: 30%;
+}
+
+.top-left h5.join-mailing-title {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.7rem;
+}
+
+.top-left form input {
+  color: lightgray;
+  font-size: 0.68rem;
+  border: transparent;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  padding-bottom: 0.1rem;
+  margin: 1.3rem 0;
+  width: 40%;
+}
+
+.top-container .top-right {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.top-right .footer-nav * {
+  font-family: Helvetica, sans-serif;
+}
+
+.footer-nav.title {
+  font-size: 0.4rem;
+  margin-bottom: 0.9rem;
+  font-weight: lighter;
+}
+
+.footer-nav li {
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+}
+
+footer .bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.bottom-container img {
+  width: 50%;
+}
+
+.bottom-container .copyright {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.copyright p {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.4rem;
+  margin-left: 0.4rem;
+}

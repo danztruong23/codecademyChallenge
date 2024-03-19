@@ -1,0 +1,71 @@
+body {
+  font-family: helvetica, sans-serif;
+}
+
+h1#main-title {
+  position: relative;
+  left: 30px;
+}
+.container {
+  border: 2px solid black;
+  padding: 20px 30px;
+  margin: 30px;
+}
+
+.color-panel {
+  display: inline-block;
+  padding: 30px 40px;
+  margin: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.color-label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.color-hex {
+  font-style: italic;
+}
+
+.color-panel.pink {
+  background-color: #ff9bd2;
+}
+
+.color-panel.deep-pink {
+  background-color: #d63484;
+}
+
+.color-panel.dark-purple {
+  background-color: #402b3a;
+  color: white;
+}
+
+.color-panel.beige {
+  background-color: #f8f4ec;
+}
+
+.font-panel {
+  display: inline-block;
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.font-lable {
+  text-decoration: underline;
+  font-size: 2em;
+}
+.quattrocento {
+  font-family: "Quattrocento";
+}
+.quattrocento-sans {
+  font-family: "Quattrocento Sans";
+}
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}

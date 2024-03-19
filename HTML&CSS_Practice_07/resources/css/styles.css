@@ -1,0 +1,289 @@
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  position: fixed;
+  height: 6.375rem;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  border-bottom: 1.5px solid black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+}
+
+.header-container .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.header-container img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1.3rem;
+}
+
+.right-header nav {
+  position: relative;
+  right: 2rem;
+}
+
+.right-header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-header nav ul li {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbb615;
+}
+
+.search-container .search-bar {
+  border: 1.5px solid black;
+  border-radius: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  width: 10rem;
+  height: 1.3rem;
+  position: relative;
+  bottom: 0.37rem;
+}
+
+.search-container .search-button {
+  border: 1.5px solid black;
+  border-radius: 2rem;
+  background-color: #fbb615;
+  padding: 0.3rem;
+  height: 1.2rem;
+  position: relative;
+  top: 0.35rem;
+}
+
+.header-container .mobile {
+  display: none;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .header-container .desktop {
+    display: none;
+  }
+
+  .header-container .mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-device-width: 468px) {
+  header {
+    height: 4.375rem;
+  }
+
+  .header-container {
+    padding: 1rem 2rem;
+  }
+
+  .header-container img {
+    height: 2rem;
+  }
+}
+
+/* Banner */
+
+main {
+  position: relative;
+  top: 6.375rem; /* To offset for fixed header. */
+}
+
+.banner-container {
+  height: 32rem;
+  background: url("/resources/images/hk-banner.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem;
+  display: flex;
+}
+
+.banner-container .content {
+  background-color: black;
+  border-radius: 1rem;
+  width: 25rem;
+  min-width: 12rem;
+  height: 16.5rem;
+  padding: 2.5rem;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h1 {
+  color: white;
+  font-family: Oswald;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 4rem;
+  flex-shrink: 2;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .banner-container {
+    justify-content: center;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-device-width: 468px) {
+  main {
+    top: 4.375rem;
+  }
+
+  .banner-container {
+    height: 20rem;
+  }
+  .banner-container .content {
+    background-color: transparent;
+  }
+  .content h1 {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    line-height: 2.3rem;
+  }
+}
+
+/* Featured Products */
+
+.featured-product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 1rem;
+  align-content: space-between;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.featured-product {
+  flex: 0 2 20rem;
+  overflow: hidden;
+  border: 1.5px solid black;
+}
+
+.featured-product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-product h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Quote */
+.quote-container {
+  padding: 2rem;
+  background-color: #fbb615;
+}
+
+.quote-container p {
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 6.375rem; /* To offset for fixed header. */
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-container > * {
+  padding: 2rem;
+}
+
+.address-container h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.address-container .address {
+  margin-top: 1rem;
+}
+
+.contact-container {
+  margin-right: 2rem;
+}
+.contact-container .contact-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact-container ul {
+  margin-top: 1rem;
+}
+
+.contact-container ul li {
+  line-height: 1.5rem;
+}
+
+.copyright {
+  padding: 2rem;
+}
+
+@media only screen and (max-device-width: 468px) {
+  footer {
+    top: 4.375rem;
+    font-size: 0.9rem;
+  }
+  .address-container .address {
+    margin-top: 0.8rem;
+  }
+  .contact-container ul {
+    margin-top: 0.8rem;
+  }
+  .contact-container ul li {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}

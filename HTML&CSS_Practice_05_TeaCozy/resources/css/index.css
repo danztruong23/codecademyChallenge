@@ -1,0 +1,138 @@
+body {
+  background-color: black;
+  color: seashell;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  border: 1px solid seashell;
+  background-color: black;
+  width: 99%;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.navigator {
+  margin-right: 10px;
+}
+.nav-element {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: seashell;
+}
+/* Mission */
+#mission {
+  height: 700px;
+  background-image: url("/resources/images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mission-banner {
+  align-self: center;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: black;
+}
+.mission-banner h2 {
+  margin-bottom: 1px;
+}
+
+/* Tea of the Month */
+
+#featured-tea {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#featured-tea h2 {
+  position: relative;
+  top: 32px;
+}
+.tea-container {
+  min-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tea-panel {
+  display: flex;
+  flex-direction: column;
+}
+.tea-title {
+  margin: 10px 0 30px 0;
+}
+.tea-image {
+  height: 200px;
+  width: 300px;
+}
+
+/* Location */
+#location {
+  background-image: url("/resources/images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#location h2 {
+  position: relative;
+  top: 35px;
+}
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.location-panel {
+  background-color: black;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+  opacity: 1;
+}
+
+/* Footer */
+.contact-info {
+  text-align: center;
+  height: 200px;
+}
+
+.copyright {
+  font-size: 15px;
+  margin-left: 20px;
+}

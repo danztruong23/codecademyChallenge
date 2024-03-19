@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body {
+				font-family: arial, sans-serif;
+				color: #665544;
+				padding: 10px;
+				border: 1px solid #554433;
+			}
+			h2 + p { color: green; }
+			.container > p { font-weight: bold; }
+		</style>
+	</head>
+	<body>
+		<h2>Heading 1</h2>
+		<p>This paragraph will have green text.</p>
+		<h2>Heading 2</h2>
+		<p>This paragraph will also have green text.</p>
+		<p>This paragraph will also have green text because it's a sibling following an h2.</p>
+		<div class="container">
+			<p>This will have bold text.</p>
+			<div>
+				<p>So will this, even though it's nested.</p>
+			</div>
+		</div>
+
+	</body>
+</html>
